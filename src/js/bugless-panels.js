@@ -139,6 +139,10 @@ var BuglessPanels = {
                     }
                 }
             });
+
+            this.backdrop.addEventListener('click', function(e) {
+                return self.closeAll();
+            });
         }
     },
     initContentCMD: function() {
